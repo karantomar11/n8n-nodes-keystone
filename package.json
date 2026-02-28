@@ -17,7 +17,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/karantomar11/n8n-nodes-keystone.git"
+        "url": "git+https://github.com/karantomar11/n8n-nodes-keystone.git"
     },
     "main": "index.js",
     "scripts": {

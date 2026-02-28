@@ -1,0 +1,15 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="#1a1a2e" stroke="#4a4e69" stroke-width="2"/>
+  
+  <!-- Keyhole shape -->
+  <circle cx="30" cy="24" r="8" fill="#e94560"/>
+  <path d="M26 28 L26 44 L34 44 L34 28 Z" fill="#e94560"/>
+  
+  <!-- Lock highlight -->
+  <circle cx="30" cy="24" r="4" fill="#1a1a2e"/>
+  
+  <!-- Shield outline -->
+  <path d="M30 8 L45 16 L45 32 C45 42 30 52 30 52 C30 52 15 42 15 32 L15 16 L30 8 Z" 
+        stroke="#16db93" stroke-width="2" fill="none"/>
+</svg>

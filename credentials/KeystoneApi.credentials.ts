@@ -1,5 +1,6 @@
 import {
     IAuthenticateGeneric,
+    ICredentialTestRequest,
     ICredentialType,
     INodeProperties,
 } from 'n8n-workflow';
@@ -34,6 +35,18 @@ export class KeystoneApi implements ICredentialType {
 
     authenticate: IAuthenticateGeneric = {
         type: 'generic',
-        properties: {},
+        properties: {
+            headers: {
+                'X-API-Key': '={{$credentials.apiKey}}',
+            },
+        },
     };
+
+    test: ICredentialTestRequest = {
+        request: {
+            baseURL: '={{$credentials.serverUrl}}',
+            url: '/api/v1/health',
+        },
+    };
+
 }

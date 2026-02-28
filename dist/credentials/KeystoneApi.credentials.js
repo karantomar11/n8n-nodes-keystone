@@ -31,7 +31,17 @@ class KeystoneApi {
         ];
         this.authenticate = {
             type: 'generic',
-            properties: {},
+            properties: {
+                headers: {
+                    'X-API-Key': '={{$credentials.apiKey}}',
+                },
+            },
+        };
+        this.test = {
+            request: {
+                baseURL: '={{$credentials.serverUrl}}',
+                url: '/api/v1/health',
+            },
         };
     }
 }

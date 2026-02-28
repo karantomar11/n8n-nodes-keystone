@@ -1,0 +1,54 @@
+{
+    "name": "n8n-nodes-keystone",
+    "version": "0.1.0",
+    "description": "n8n community nodes for Keystone PII redaction/restoration",
+    "keywords": [
+        "n8n-community-node-package",
+        "pii",
+        "privacy",
+        "redaction",
+        "llm"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/karantomar11/n8n-nodes-keystone",
+    "author": {
+        "name": "Karan Tomar",
+        "email": "karantomar322@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karantomar11/n8n-nodes-keystone.git"
+    },
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc && gulp build:icons",
+        "dev": "tsc --watch",
+        "format": "prettier nodes credentials --write",
+        "lint": "eslint nodes credentials --ext .ts --fix",
+        "lintcheck": "eslint nodes credentials --ext .ts",
+        "prepublishOnly": "npm run build"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "credentials": [
+            "dist/credentials/KeystoneApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/KeystoneRedact/KeystoneRedact.node.js",
+            "dist/nodes/KeystoneRestore/KeystoneRestore.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.0",
+        "gulp": "^5.0.1",
+        "n8n-workflow": "*",
+        "prettier": "^2.8.0",
+        "typescript": "~5.0.0"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    }
+}

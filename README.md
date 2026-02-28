@@ -10,7 +10,7 @@
 
 <p align="center">
   <a href="#installation"><img alt="n8n community node" src="https://img.shields.io/badge/n8n-community%20node-ff6d5a?style=flat-square&logo=n8n&logoColor=white" /></a>
-  <a href="https://github.com/keystone-os/n8n-nodes-keystone/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" /></a>
+  <a href="https://github.com/karantomar11/n8n-nodes-keystone/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" /></a>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-brightgreen?style=flat-square" />
   <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.0-3178c6?style=flat-square&logo=typescript&logoColor=white" />
 </p>
@@ -145,7 +145,7 @@ Re-inserts original PII values using a vault token.
 
 ```bash
 # Clone the repo
-git clone https://github.com/keystone-os/n8n-nodes-keystone.git
+git clone https://github.com/karantomar11/n8n-nodes-keystone.git
 cd n8n-nodes-keystone
 
 # Install dependencies
@@ -193,6 +193,5 @@ Distributed under the **MIT** License. See [`LICENSE`](LICENSE) for details.
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/keystone-os">Keystone OS</a>
+  Built with ❤️ by <a href="https://github.com/karantomar11">Karan Tomar</a>
 </p>
-# n8n-nodes-keystone-
